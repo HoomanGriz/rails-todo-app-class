@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+task = {
+  title: "Enter Your Task Here"
+}
+
+new_task = Task.new(task)
+new_task.save

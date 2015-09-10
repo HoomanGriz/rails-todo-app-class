@@ -1,0 +1,9 @@
+<h1>Todo List Motha Fucka</h1>
+
+<% @tasks.each do |task| %>
+  <div><%= task.title %></div>
+<% end %>
+
+<%= form_for @task do |f| %>
+  <%= f.text_field :title %>
+<% end %>
